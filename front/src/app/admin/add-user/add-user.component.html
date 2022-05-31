@@ -1,0 +1,44 @@
+<!-- Fawez TEKA
+    https://www.linkedin.com/in/fawez-teka/
+    https://github.com/TekaFawez
+   Copyright © Fawez TEKA . All rights reserved. -->
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary my-3" [routerLink]="['/admin']">Retour</button>
+            <hr>
+            <h1>Ajouter un etudiant</h1>
+        </div>
+    </div>
+    <form [formGroup]="addUserForm" (ngSubmit)="addUser()">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="name">Le nom de l'etudiant:</label>
+                <input type="text" name="name" id="name" formControlName="name" class="form-control">
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">L'email de l'etudiant:</label>
+            <input type="email" name="email" id="email" class="form-control" formControlName="email">
+
+        </div>
+        <div class="form-group">
+            <label for="password">Le mot de passe de l'etudiant:</label>
+            <input type="password" name="password" id="password" class="form-control" formControlName="password">
+
+        </div>
+
+
+
+        <div class="form-row">
+            <div class="form-group col">
+
+                <input type="submit" value="Ajouter " class="btn btn-info">
+            </div>
+        </div>
+
+    </form>
+</div>
+<app-footer></app-footer>
