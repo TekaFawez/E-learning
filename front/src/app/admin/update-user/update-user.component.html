@@ -1,11 +1,11 @@
-
-<app-adminnavbar></app-adminnavbar>
+<app-adminnavbar>
+</app-adminnavbar>
 <div class="container">
     <div class="row">
         <div class="col">
-            <button class="btn btn-primary my-3" [routerLink]="['/hopitallist']">Retour</button>
+            <button class="btn btn-primary my-3" [routerLink]="['/admin']">Retour</button>
             <hr>
-            <h1> Editer hôpitaux</h1>
+            <h1> Editer user</h1>
         </div>
     </div>
     <form [formGroup]="updateUserForm" (ngSubmit)="updateUser()">
@@ -13,39 +13,35 @@
             <div class="form-group col-6">
                 <label for="name">nom</label>
                 <input type="text" name="name" id="name" formControlName="name" class="form-control">
-             <!--    <div *ngIf="nom.touched && nom.invalid">
+                <!--    <div *ngIf="nom.touched && nom.invalid">
                     <small *ngIf="nom.errors.required" class="text-danger"> le nom de l'hôpital est obligatoire<br></small>
                     <small *ngIf="nom.errors.pattern" class="text-danger">Le nom de l'hôpital est invalide<br></small>
 
                 </div> -->
             </div>
-            </div>
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="text" name="email" id="email" class="form-control" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="text" name="email" id="email" class="form-control" formControlName="email">
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" formControlName="password" class="form-control">
 
             </div>
-            <div class="form-row">
-                <div class="form-group col-6">
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password" formControlName="password" class="form-control">
-
-                </div>
-                </div>
+        </div>
 
 
 
 
         <div class="form-row">
             <div class="form-group col">
-                <input type="submit" value="Valider"  class="btn btn-warning">
+                <input type="submit" value="Valider" class="btn btn-warning">
             </div>
         </div>
 
     </form>
 </div>
 <app-footer></app-footer>
-
-
-
-

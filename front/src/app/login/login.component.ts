@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     this.userService.loginUser( this.loginForm.value).subscribe(
       data => {
         console.log(data)
-        this.router.navigate(['/']);
+        this.router.navigate(['/home']);
       }
     )
   }

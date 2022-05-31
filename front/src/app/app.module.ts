@@ -57,11 +57,12 @@ import { UpdateUserComponent } from './admin/update-user/update-user.component';
     CourComponent,
     CssComponent,
     FooterComponent,
-    HomeComponent,
+
     HtmlComponent,
     JsComponent,
     NavbarComponent,
     AdminComponent,
+    HomeComponent,
 
     UsersComponent,
     LoginAdminComponent,
